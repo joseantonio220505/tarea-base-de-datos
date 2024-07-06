@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= book.title %></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1><%= book.title %></h1>
+  <p><strong>Author:</strong> <%= book.author %></p>
+  <p><strong>Description:</strong> <%= book.description %></p>
+  <p><strong>Published Year:</strong> <%= book.publishedYear %></p>
+  <a href="/books/<%= book._id %>/edit">Edit</a>
+  <a href="/books">Back to Books</a>
+</body>
+</html>
